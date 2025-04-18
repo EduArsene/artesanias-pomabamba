@@ -14,3 +14,21 @@ img{
 html, body {
   overflow-x: hidden; /* 🔒 Oculta cualquier scroll horizontal */
 }
+
+@keyframes escribir {
+  from { width: 0; }
+  to { width: 30%; border-color: transparent}
+  
+}
+
+@keyframes parpadeo {
+  0% { border-color: transparent; }
+}
+
+.escribir {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #fff; /* Simula el cursor */
+  width: 50%;
+  animation: escribir 3s steps(120, end) forwards, parpadeo 1.8s infinite;
+}

@@ -15,26 +15,27 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-100 to-yellow-50 font-sans ">
+    <div className="min-h-screen bg-gradient-to-br from-gray-200 to-yellow-50 font-sans ">
       {/* Encabezado con navegación separada */}
-      <header className=" bg-green-500 text-white px-6 py-4 shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
-        <h1 className="text-3xl font-bold mb-2 md:mb-0">Artesanías de Pomabamba</h1>
+      <header class="bg-gradient-to-b from-red-900 to-red-700 text-white px-6 py-4 shadow-md flex flex-col md:flex-row md:justify-between md:items-center">
+        <h1 className="text-[#00000] text-3xl font-[Comics Sans] italic mb-2 md:mb-0 escribir">ARTESANÍAS POMABAMBA</h1>
         <nav className="space-x-4">
           <button
             onClick={() => setActiveTab('home')}
-            className="outline-offset-4 bg-red-500 px-4 py-2 rounded-md hover:bg-gray-800 transition animate-pulse animate-bounce"
+            className="outline-offset-4 bg-orange-700 px-4 py-2 rounded-md hover:bg-black transition animate-bounce"
           >
             Inicio
           </button>
           <button
             onClick={() => setActiveTab('productos')}
-            className="shadow-xl/30 bg-blue-500 duration-700 x-4 py-2 rounded-md hover:bg-gray-800 transition animate-pulse"
+            className="shadow-xl0 bg-orange-700 duration-700 x-4 py-2 rounded-md hover:bg-black transition animate-bounce"
           >
             Artículos
           </button>
+
           <button
             onClick={() => setActiveTab('contacto')}
-            className=" px-4 py-2 rounded-md hover:bg-red-800 transition animate-pulse"
+            className=" px-4 py-2 bg-orange-700 rounded-md hover:bg-black transition animate-bounce"
           >
             Contáctanos
           </button>
@@ -44,14 +45,15 @@ function App() {
       {/* Contenido principal con imagen y sección dinámica */}
       <main className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Imagen decorativa o representativa */}
-        <div className="rounded-lg overflow-hidden shadow-lg ">
+        <div className="rounded-lg overflow-hidden shadow-lg scale-90 hover:scale-100 transition-transform duration-300 ">
           <img
             src={artesaniaPomabamba}
             alt="Artesanía"
-            className="w-full  object-cover backdrop-brightness-150"
+            className="w-full  object-cover backdrop-brightness-150 border-double "
           />
 
         </div>
+
 
         {/* Contenido dinámico con animación */}
         <motion.div
@@ -72,7 +74,7 @@ function Home() {
   return (
     <section className="text-center">
       <motion.h2
-        className="text-4xl font-bold text-green-600 font-mono"
+        className="text-4xl font-bold text-red-700 font-mono"
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.9 }}
@@ -83,10 +85,10 @@ function Home() {
         Descubre la riqueza cultural de Pomabamba a través de nuestras artesanías hechas a mano.
       </p>
       <div
-        className="mt-12 h-64 bg-cover bg-center mask-[url('/src/assets/img/scribble.png')] mask-b-from-20% mask-b-to-80%"
+        className="mt-12 h-64 bg-cover bg-center mask-[url('/src/assets/img/scribble.png')] mask-b-from-20% mask-b-to-80% border-double transition-opacity duration-300 hover:opacity-85 hover:blur-sm"
         style={{ backgroundImage: `url(${mountains})` }}
       >
-        <p className="text-white p-4 font-bold">asda</p>
+        <p className="text-white p-4 font-bold"></p>
       </div>
     </section>
   );
@@ -132,13 +134,13 @@ function Contacto() {
         after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
           Enviar
         </button>
-        
+
         <button class="text-white px-4 py-2 hover:bg-red-600 rounded fill-current bg-cyan-500 shadow-lg shadow-cyan-500 ...">Subscribe</button>
         <button class="text-white px-4 py-2 hover:bg-red-600 rounded fill-current bg-blue-500 shadow-lg shadow-blue-500  ...">Subscribe</button>
         <button class="text-white px-4 py-2 hover:bg-red-600 rounded fill-current bg-indigo-500 shadow-lg shadow-indigo-500 ...">Subscribe</button>
 
         <div class="mask-[url(/img/scribble.png)] bg-[url(/img/mountains.jpg)] mask-b-from-20% mask-b-to-80%">
-          
+
         </div>
       </form>
     </div>
