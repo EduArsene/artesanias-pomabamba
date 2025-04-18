@@ -85,10 +85,10 @@ function Home() {
         Descubre la riqueza cultural de Pomabamba a través de nuestras artesanías hechas a mano.
       </p>
       <div
-        className="mt-12 h-64 bg-cover bg-center mask-[url('/src/assets/img/scribble.png')] mask-b-from-20% mask-b-to-80% border-double transition-opacity duration-300 hover:opacity-85 hover:blur-sm"
+        className="backdrop-blur-sm mt-12 h-64 bg-cover bg-center mask-[url('/src/assets/img/scribble.png')] mask-b-from-20% mask-b-to-80% border-double transition-opacity duration-300 hover:opacity-85 hover:blur-sm translate-8 "
         style={{ backgroundImage: `url(${mountains})` }}
       >
-        <p className="text-white p-4 font-bold"></p>
+      
       </div>
     </section>
   );
@@ -127,7 +127,7 @@ function Contacto() {
         <input type="text" placeholder="Tu nombre" className="w-full p-2 border rounded shadow-red-500" />
         <input type="email" placeholder="Tu correo@" className="w-full p-2  caret-red-500" />
         <input type="email" placeholder="Tu correo@" className="w-full p-2 scheme-light-dark" />
-        <button class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-red-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] 
+        <button class=" group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-red-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] 
         duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline 
         hover:underline-offset-4  origin-left hover:decoration-2 hover:text-orange-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-red-50 text-base font-bold rounded-lg  
         overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-red-500 before:rounded-full before:blur-lg  
@@ -136,8 +136,7 @@ function Contacto() {
         </button>
 
         <button class="text-white px-4 py-2 hover:bg-red-600 rounded fill-current bg-cyan-500 shadow-lg shadow-cyan-500 ...">Subscribe</button>
-        <button class="text-white px-4 py-2 hover:bg-red-600 rounded fill-current bg-blue-500 shadow-lg shadow-blue-500  ...">Subscribe</button>
-        <button class="text-white px-4 py-2 hover:bg-red-600 rounded fill-current bg-indigo-500 shadow-lg shadow-indigo-500 ...">Subscribe</button>
+        
 
         <div class="mask-[url(/img/scribble.png)] bg-[url(/img/mountains.jpg)] mask-b-from-20% mask-b-to-80%">
 
